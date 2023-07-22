@@ -1,61 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculadora</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body class="container">
-    <h1 style="text-align: center;">Calculadora</h1>
-    <div class="container" style="width: 50%;">
-            <div class="row">  
-                <span class="input-group-text" id="lblDatos"></span>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <div class="container-calcu">
+            
+            <div class="container">
+                <h1 style="text-align: center;">Calculadora</h1>
+                                    <span class="input-group-text" id="lblDatos"></span>
+                    <br>
+                    <input type="text" class="input-pantalla" placeholder="0" id="resultado" aria-label="Username"
+                        aria-describedby="basic-addon1">
+
             </div>
-            <br>
-            <div class="row">  
-                <input type="text" class="form-control" placeholder="0" id="resultado" aria-label="Username" aria-describedby="basic-addon1">
+
+            <div class="container">
+                <table class="clearing">
+                    <tr><td><button type="button" id="clear">C</button></td>
+                        <td><button type="button" id="clearLast">AC</button></td></tr>
+                </table>
+                
+                <table>
+
+                    <tr>
+                        <td><button class="btn" id="btn7">7</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn8">8</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn9">9</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnMas">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light px-5" id="btn4">4</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn5">5</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn6">6</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnMenos">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light px-5" id="btn1">1</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn2">2</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btn3">3</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnPor">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-light px-5" id="btn0">0</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnPunto">.</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnIgual">=</button></td>
+                        <td><button type="button" class="btn btn-light px-5" id="btnEntre">/</button></td>
+                    </tr>
+                </table>
             </div>
-            <br>
-            <td><button type="button" class="btn btn-dark px-5" id="clear">C</button></td>
-            <td><button type="button" class="btn btn-dark px-5" id="clearLast">AC</button></td>
-            <br>
-</div>
-<br>
-<div class="container" style="width: 50%;">
-    <table class="table table-dark table-striped responsive-md">
-        
-        <tr>
-            <td><button type="button" class="btn btn-light px-5" id="btn7">7</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn8">8</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn9">9</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnMas">+</button></td>
-        </tr>
-        <tr>
-            <td><button type="button" class="btn btn-light px-5" id="btn4">4</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn5">5</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn6">6</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnMenos">-</button></td>
-        </tr>
-        <tr>
-            <td><button type="button" class="btn btn-light px-5" id="btn1">1</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn2">2</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btn3">3</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnPor">*</button></td>
-        </tr>
-        <tr>
-            <td><button type="button" class="btn btn-light px-5" id="btn0">0</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnPunto">.</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnIgual">=</button></td>
-            <td><button type="button" class="btn btn-light px-5" id="btnEntre">/</button></td>
-        </tr>
-</table>
-</div>
+
+        </div>
+    </div>
+
 
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

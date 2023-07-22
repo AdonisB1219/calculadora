@@ -3,8 +3,9 @@
 }
 
 h1{
-    font-size: 18px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
+    color: white;
 }
 
 .calculadora{
@@ -12,7 +13,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container-calcu{
@@ -21,28 +21,32 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 160px;
+    height: 80vh;
+    width: 300px;
     border-radius: 15px;
+    margin-top: 100px;
     margin-left: 10px;
     box-shadow: 5px 5px 5px black;
 }
 
-button{
+td > *{
     background-color: white;
     border-radius: 5px;
-    width: 40px;
-    font-size: 20px;
+    width: 108px;
+    font-size: 30px;
 }
 
 .btn{
-    width: 30px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(226, 230, 250);
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .input-pantalla{
-    width: 130px;
-    font-size: 20px;
+    width: 220px;
+    height: 50px;
+    font-size: 30px;
     margin-top: 10px;
 }
 
@@ -50,7 +54,19 @@ span{
     background-color: rgb(226, 227, 227);
     padding-right: 15px;
     padding-left: 5px;
-    font-size: 13px;
+    font-size: 25px;
     border-radius: 5px;
     margin-bottom: 0px;
+}
+
+table{
+    margin: 0;
+}
+
+table > tr, td{
+    padding: 3px;
+}
+
+.clearing{
+    margin-bottom: 10px;
 }
